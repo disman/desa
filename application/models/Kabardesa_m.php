@@ -38,7 +38,7 @@ class Kabardesa_m extends CI_Model
     public function save()
     {
         $title = htmlspecialchars($this->input->post('title', true));
-        $content = htmlspecialchars($this->input->post('content', true));
+        $content = $this->input->post('content', true);
         $image = $this->_uploadImage();
         $kabar = [
             'title'        => $title,
@@ -58,7 +58,7 @@ class Kabardesa_m extends CI_Model
         }
         $id = $this->input->post('id');
         $title = htmlspecialchars($this->input->post('title', true));
-        $content = htmlspecialchars($this->input->post('content', true));
+        $content = $this->input->post('content', true);
         $kabar = [
             'id'           => $id,
             'title'        => $title,
