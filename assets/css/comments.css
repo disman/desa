@@ -1,0 +1,22 @@
+.comments-row {
+	margin-bottom: 30px;
+}
+
+.comment-age {
+	font-size: 12px;
+}
+
+.comments-well {
+	margin-top: 10px;
+}
+
+.btn-default {
+	color: #676a6c;
+	border: 1px #eee solid;
+}
+
+.btn-default:hover {
+	color: #676a6c;
+	border: 1px #eee solid;
+	background-color: #f3f3f4;
+}

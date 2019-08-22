@@ -1,0 +1,283 @@
+html, body {
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: #f3f3f4;
+	color: #676a6c;
+	height: 100%;
+}
+
+.box {
+	border: 1px red dotted;
+}
+
+#side-menu {
+	background-color: #2f4050;
+	padding: 0px;
+}
+
+#side-menu h1 {
+	color: #1f3647;
+	text-align: center;
+	margin: 10px 0px;
+	font-size: 25px;
+	font-weight: bold;
+	font
+}
+
+#side-menu ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#side-menu .glyphicon {
+	margin-right: 6px;
+}
+
+#side-menu a {
+	padding: 12px 20px;
+	text-decoration: none;
+	color: #9fb1c2;
+	font-weight: bold;
+	font-size: 13px;
+	display: block;
+}
+
+#side-menu a:hover {
+	background-color: #293846;
+	color: #fff;
+	display: block;
+}
+
+#side-menu .active a {
+	color: #fff;
+	background-color: #293846;
+}
+
+#side-menu .settings-btn {
+	background-color: #1ab394;
+}
+
+#side-menu .settings-btn a {
+	color: #fff;
+}
+
+#side-menu .setting-btn a:hover {
+	background-color: #1ab394;
+}
+
+#side-menu .collapseable li {
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+#side-menu .collapseable a {
+	color: #9fb1c2;
+	font-size: 12px;
+	padding: 0px 10px;
+	text-decoration: none;
+	display: block;
+}
+
+#side-menu .collapseable a:hover {
+	color: #fff;
+}
+
+#side-menu .collapseable {
+	border-left: 4px solid #1ab394;
+	background-color: #293846;
+}
+
+#side-menu .link > ul > li {
+	padding-bottom: 10px;
+}
+
+.display-table {
+	display: table;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.display-table-row {
+	display: table-row;
+	height: 100%;
+}
+
+.display-table-cell {
+	display: table-cell;
+	float: none;
+	height: 100%;
+}
+
+.valign-top {
+	vertical-align: top;
+}
+
+#nav-header {
+	background-color: #fff;
+	border-bottom: 1px solid #e7eaec;
+}
+
+#nav-header #header-search-field {
+	padding-top: 17px;
+	vertical-align: center;
+	border: none;
+	width: 300px;
+	outline: none;
+}
+
+#nav-header ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	color: #676a6c;
+}
+
+#nav-header ul li {
+	float: left;
+	margin-left: 15px;
+	padding: 17px 0px;
+}
+
+#nav-header ul .glyphicon {
+	color: #676a6c;
+}
+
+.label-message {
+	background-color: #1ab394;
+}
+
+#nav-header ul a {
+	text-decoration: none;
+}
+
+#nav-header .logout {
+	color: #676a6c;
+}
+
+#nav-header .logout:hover {
+	color: #676a6c;
+}
+
+#nav-header #welcome {
+	margin-right: 20px;
+}
+
+#nav-header ul .label {
+	position: absolute;
+	margin-top: -10px;
+	margin-left: -5px;
+}
+
+#nav-header .fixed-width {
+	width: 35px;
+}
+
+#admin-footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	background-color: #fff;
+	padding: 10px;
+	font-size: 12px;
+	color: #676a6c;
+}
+
+#content {
+	margin: 20px 0px 50px 0px;
+	background-color: #fff;
+	border-top: 4px #e7eaec solid;
+}
+
+#content header {
+	border-bottom: 1px #f3f3f4 solid;
+	padding: 10px 20px;
+}
+
+.page_title {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.content-inner {
+	padding: 20px;
+}
+
+.search-field {
+	height: 31px;
+	border: 1px #e7eaec solid;
+}
+
+.search-row {
+	margin-bottom: 30px;
+}
+
+.btn-primary {
+	background-color: #1ab394;
+	border: 1px solid #1ab394;
+}
+
+.btn-primary:hover {
+	background-color: #1cc394;
+	border: 1px solid #1cc394;
+}
+
+.btn-primary:focus {
+	background-color: #1cc394;
+	border: 1px solid #1cc394;
+}
+
+.go {
+	height: 31px;
+}
+
+.label-success {
+	background-color: #1ab394;
+}
+
+.label-lg {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+}
+
+.label-sm {
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.label-xs {
+	padding: 5px 5px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.navbar-default {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #1ab394;
+	background-color: #1ab394;
+}
+
+.navbar-default .icon-bar {
+	border: 1px white solid;
+}
+
+.navbar-default .navbar-toggle:hover {
+	background-color: #1ab394;
+}
+
+.navbar-default .navbar-toggle:focus {
+	background-color: #1ab394;
+}
+
+.pagination a {
+	color: #1ab394 !important;
+}
