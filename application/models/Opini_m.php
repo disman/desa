@@ -108,6 +108,7 @@ class Opini_m extends CI_Model
 
     public function getAll()
     {
+        $this->db->order_by('id', 'desc');
         return $this->db->get($this->_table)->result_array();
     }
 }

@@ -100,6 +100,7 @@ class Artikel_m extends CI_Model
 
     public function getAllArtikel()
     {
+        $this->db->order_by('id', 'desc');
         return $this->db->get($this->_table)->result_array();
     }
     /*
