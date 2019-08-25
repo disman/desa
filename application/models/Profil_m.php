@@ -31,7 +31,7 @@ class Profil_m extends CI_Model
     {
         $id = htmlspecialchars($this->input->post('id', true));
         $judul = htmlspecialchars($this->input->post('judul', true));
-        $profil = htmlspecialchars($this->input->post('profil', true));
+        $profil = $this->input->post('profil', true);
         $data = [
             'id'           => $id,
             'judul'        => $judul,
@@ -45,7 +45,7 @@ class Profil_m extends CI_Model
     {
         $id = htmlspecialchars($this->input->post('id', true));
         $judul = htmlspecialchars($this->input->post('judul', true));
-        $profil = htmlspecialchars($this->input->post('profil', true));
+        $profil = $this->input->post('profil', true);
         $data = [
             'id'           => $id,
             'judul'        => $judul,
@@ -59,7 +59,7 @@ class Profil_m extends CI_Model
     {
         $id = htmlspecialchars($this->input->post('id', true));
         $judul = htmlspecialchars($this->input->post('judul', true));
-        $profil = htmlspecialchars($this->input->post('profil', true));
+        $profil = $this->input->post('profil', true);
         $data = [
             'id'           => $id,
             'judul'        => $judul,
