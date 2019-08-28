@@ -72,7 +72,7 @@ class Profil_m extends CI_Model
 	 * End backend 
 	 */
 
-    public function getProfilDesa()
+    public function getGambaranUmum()
     {
         return $this->db->get_where($this->_table, 'id = 1')->result_array();
     }

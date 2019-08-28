@@ -17,7 +17,7 @@ class Profil extends CI_Controller
         $menu = $this->menu_m;
         $profil = $this->profil_m;
         $data['menu'] = $menu->getAll();
-        $data['profilDesa'] = $profil->getProfilDesa();
+        $data['gambaran_umum'] = $profil->getGambaranUmum();
         $data['title'] = "Profil";
 
         $this->load->view('_partials/header', $data);

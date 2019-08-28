@@ -17,7 +17,7 @@
 
             <ul class="cat">
                 <?php foreach ($kategori as $row) : ?>
-                    <li><i class="icon-angle-right"></i> <a href="#"><?= $row['category']; ?></a><span> (20)</span></li>
+                <li><i class="icon-angle-right"></i> <a href="#"><?= $row['category']; ?></a><span> (20)</span></li>
                 <?php endforeach; ?>
             </ul>
         </div>
@@ -70,7 +70,7 @@
 
             <h5 class="widgetheading">Video widget</h5>
             <div class="video-container">
-                <iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0"> </iframe>
+                <iframe src="https://www.youtube.com/embed/video/watch?v=psu-fasbzpU" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
 

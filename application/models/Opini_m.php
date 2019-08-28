@@ -111,4 +111,21 @@ class Opini_m extends CI_Model
         $this->db->order_by('id', 'desc');
         return $this->db->get($this->_table)->result_array();
     }
+
+    public function countAllOpini()
+    {
+        return $this->db->get($this->_table)->num_rows();
+    }
+
+    public function getAllOpini($limit, $start)
+    {
+        $this->db->order_by('id', 'desc');
+        return $this->db->get($this->_table, $limit, $start)->result_array();
+    }
+
+    public function readmore($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get($this->_table)->result_array();
+    }
 }

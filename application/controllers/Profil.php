@@ -16,8 +16,8 @@ class Profil extends CI_Controller
         $kategori = $this->kategori_m;
         $profil = $this->profil_m;
         $data['kategori'] = $kategori->getAll();
-        $data['profilDesa'] = $profil->getProfilDesa();
-        $data['title'] = "Profil Desa Bahari";
+        $data['gambaran_umum'] = $profil->getGambaranUmum();
+        $data['title'] = "Profil desa bahari";
 
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
