@@ -117,4 +117,10 @@ class Artikel_m extends CI_Model
         $query = $this->db->get();
         return $query->result_array();
     }
+
+    public function readMore($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get($this->_table)->result_array();
+    }
 }

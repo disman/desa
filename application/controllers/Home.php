@@ -7,7 +7,8 @@ class Home extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('kategori_m', 'kategori', true);
+        $this->load->model('kategori_m');
+        $this->load->model('artikel_m');
     }
     public function index()
     {
@@ -25,12 +26,15 @@ class Home extends CI_Controller
         // $wanita = $this->db->get('penduduk')->result();
         // $data['wanita'] = $wanita;
 
-        $data['kategori'] = $this->kategori->getAll();
+        $kategori = $this->kategori_m;
+        $artikel = $this->artikel_m;
+        $data['kategori'] = $kategori->getAll();
+        $data['artikel'] = $artikel->getAll();
         $data['title'] = "Selamat Datang";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
         $this->load->view('themes/slide-show');
-        $this->load->view('themes/kabar-terkini');
+        $this->load->view('themes/kabar-terkini', $data);
         $this->load->view('themes/struktur-organisasi');
         $this->load->view('themes/jumlah-penduduk');
         $this->load->view('themes/testimoni');

@@ -68,23 +68,10 @@
                                         <li><a href="#">LPMD</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#">Berita <i class="icon-angle-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="<?= base_url('artikel'); ?>">Artikel</a></li>
-                                        <li><a href="<?= base_url('opini'); ?>">Opini</a></li>
-                                        <li><a href="<?= base_url('kabardesa'); ?>">Kabar Desa</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="<?= base_url('penduduk'); ?>">Data Penduduk </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Galeri </a>
-                                </li>
-                                <li>
-                                    <a href="<?= base_url('kontak'); ?>">Kontak </a>
-                                </li>
+                                <li><a href="<?= base_url('artikel'); ?>">Kabar Desa</a></li>
+                                <li><a href="<?= base_url('penduduk'); ?>">Data Penduduk </a></li>
+                                <li><a href="#">Galeri </a></li>
+                                <li><a href="<?= base_url('kontak'); ?>">Kontak </a></li>
                             </ul>
                         </nav>
                     </div>
