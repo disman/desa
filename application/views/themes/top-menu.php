@@ -41,7 +41,7 @@
                         <nav>
                             <ul class="nav topnav">
                                 <li class="active">
-                                    <a href="<?= base_url(); ?>"><i class="icon-home"></i> Beranda </a>
+                                    <a href="<?= base_url(); ?>"><i class="icon-home"></i> Home </a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Profil <i class="icon-angle-down"></i></a>
@@ -69,8 +69,9 @@
                                     </ul>
                                 </li>
                                 <li><a href="<?= base_url('artikel'); ?>">Kabar Desa</a></li>
-                                <li><a href="<?= base_url('penduduk'); ?>">Data Penduduk </a></li>
+                                <li><a href="<?= base_url('penduduk'); ?>">Penduduk </a></li>
                                 <li><a href="#">Galeri </a></li>
+                                <li><a href="<?= base_url('download'); ?>"><i class="icon-download"></i> Download </a></li>
                                 <li><a href="<?= base_url('kontak'); ?>">Kontak </a></li>
                             </ul>
                         </nav>

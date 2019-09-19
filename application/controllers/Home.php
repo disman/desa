@@ -29,7 +29,7 @@ class Home extends CI_Controller
         $kategori = $this->kategori_m;
         $artikel = $this->artikel_m;
         $data['kategori'] = $kategori->getAll();
-        $data['artikel'] = $artikel->getAll();
+        $data['artikel'] = $artikel->getAllArtikel();
         $data['title'] = "Selamat Datang";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
