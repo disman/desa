@@ -9,27 +9,16 @@ class Home extends CI_Controller
         parent::__construct();
         $this->load->model('kategori_m');
         $this->load->model('artikel_m');
+        $this->load->model('penduduk_m');
     }
     public function index()
     {
-        $data['penduduk'] = $this->db->get('penduduk')->num_rows();
-        // $data['pria'] = $this->db->get_where('penduduk', array('gender' => 'Pria'));
-        // echo ($data['pria']);
-        // die;
-        // $this->db->select('*');
-        // $this->db->where('gender = gender');
-        // $pria = $this->db->get('penduduk')->count();
-        // $data['pria'] = $pria;
-
-        // $this->db->select('*');
-        // $this->db->where('gender = gender');
-        // $wanita = $this->db->get('penduduk')->result();
-        // $data['wanita'] = $wanita;
-
+        $penduduk = $this->penduduk_m;
+        $data['penduduk'] = $penduduk->countAll();
         $kategori = $this->kategori_m;
         $artikel = $this->artikel_m;
         $data['kategori'] = $kategori->getAll();
-        $data['artikel'] = $artikel->getAllArtikel();
+        $data['artikel'] = $artikel->kabarTerkini();
         $data['title'] = "Selamat Datang";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);

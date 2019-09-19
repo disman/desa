@@ -107,6 +107,13 @@ class Artikel_m extends CI_Model
 	 * End backend 
 	 */
 
+    public function kabarTerkini()
+    {
+        $this->db->order_by('id', 'desc');
+        $this->db->limit(3);
+        return $this->db->get($this->_table)->result_array();
+    }
+
     public function getAll()
     {
         $this->db->select('
