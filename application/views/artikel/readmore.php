@@ -25,20 +25,10 @@
                                 </div>
                                 <div class="post-entry">
                                     <p><?= $row['content']; ?></p>
-                                    <a href="<?php echo base_url('artikel'); ?>" class="readmore"><i class="icon-angle-left"></i> Kembali</a>
+                                    <a href="#" onclick="self.history.back()" class="readmore"><i class="icon-angle-left"></i> Kembali</a>
                                 </div>
                             </div>
                         </div>
                     </article>
                 <?php endforeach; ?>
-
-                <?php //echo $this->pagination->create_links(); 
-                ?>
-
-                <div id="pagination">
-                    <span class="all">Page 1 of 3</span>
-                    <span class="current">1</span>
-                    <a href="#" class="inactive">2</a>
-                    <a href="#" class="inactive">3</a>
-                </div>
             </div>

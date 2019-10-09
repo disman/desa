@@ -4,7 +4,7 @@
         <div class="row">
             <div class="span12">
                 <div class="row">
-                    <?php foreach ($artikel as $row) : ?>
+                    <?php foreach ($news as $row) : ?>
                         <div class="span4">
                             <div class="box flyIn">
                                 <div class="icon">
@@ -12,8 +12,8 @@
                                 </div>
                                 <div class="text">
                                     <h4>Kabar <strong>Terkini</strong></h4>
-                                    <p><?= $row['title']; ?></p>
-                                    <a href="#">Selengkapnya</a>
+                                    <h6><?= $row['title']; ?></h6>
+                                    <a href="<?php echo base_url(); ?>artikel/readmore/<?php echo $row['id']; ?>" class="readmore">Selengkapnya <i class="icon-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>

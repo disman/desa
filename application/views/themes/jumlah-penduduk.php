@@ -86,8 +86,8 @@
                     </div>
                     <div class="pricing-content">
                         <ul>
-                            <li><i class="icon-ok"></i> Laki-Laki <?= $pria; ?> Orang</li>
-                            <li><i class="icon-ok"></i> Perempuan <?= $wanita; ?> Orang</li>
+                            <li><i class="icon-ok"></i> Laki-Laki 9 Orang</li>
+                            <li><i class="icon-ok"></i> Perempuan 9 Orang</li>
                         </ul>
                     </div>
                     <div class="pricing-action">

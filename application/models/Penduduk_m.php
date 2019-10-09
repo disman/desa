@@ -155,5 +155,10 @@ class Penduduk_m extends CI_Model
     }
 
     public function getByGender()
-    { }
+    {
+        $this->db->select('*');
+        $this->db->where('gender');
+        $this->db->from($this->_table);
+        return $this->db->get()->result();
+    }
 }

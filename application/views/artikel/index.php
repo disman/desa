@@ -13,7 +13,6 @@
                                         <div class="post-heading">
                                             <h3><a href="#"><?= $row['title']; ?></a></h3>
                                         </div>
-                                        <iframe src="" frameborder="0">Video</iframe>
                                         <img src="<?= base_url('upload_file/images/' . $row['image']); ?>" alt="" />
                                     </div>
                                     <div class="meta-post">

@@ -180,17 +180,17 @@
                                         <p>KASI KESRA & PELAYANAN</p>
                                         <ul class="social-network">
                                             <li>
-                                                <a href="#" title="Twitter">
+                                                <a href="http://twitter.com/disman" target="_blank" title="Twitter">
                                                     <i class="icon-circled icon-bglight icon-twitter active"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="Google +">
+                                                <a href="http://plus.google.com/kang.disman" target="_blank" title="Google +">
                                                     <i class="icon-circled icon-bglight icon-google-plus active"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" title="Facebook">
+                                                <a href="http://facebook.com/kang.disman" target="_blank" title="Facebook">
                                                     <i class="icon-circled icon-bglight icon-facebook active"></i>
                                                 </a>
                                             </li>

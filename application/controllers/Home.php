@@ -18,7 +18,8 @@ class Home extends CI_Controller
         $kategori = $this->kategori_m;
         $artikel = $this->artikel_m;
         $data['kategori'] = $kategori->getAll();
-        $data['artikel'] = $artikel->kabarTerkini();
+        $data['news'] = $artikel->kabarTerkini();
+        $data['recent'] = $artikel->recentArtikel();
         $data['title'] = "Selamat Datang";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
