@@ -17,7 +17,7 @@
 
             <ul class="cat">
                 <?php foreach ($kategori as $row) : ?>
-                <li><i class="icon-angle-right"></i> <a href="#"><?= $row['category']; ?></a><span> (20)</span></li>
+                    <li><i class="icon-angle-right"></i> <a href="#"><?= $row['category']; ?></a><span> (20)</span></li>
                 <?php endforeach; ?>
             </ul>
         </div>
@@ -31,21 +31,13 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="one">
                         <ul class="popular">
-                            <li>
-                                <img src="<?php echo base_url('public/'); ?>img/dummies/blog/small/1.jpg" alt="" class="thumbnail pull-left" />
-                                <p><a href="#">Dorlorem ipsum et mea dolor sit amet</a></p>
-                                <span>20 June, 2013</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo base_url('public/'); ?>img/dummies/blog/small/2.jpg" alt="" class="thumbnail pull-left" />
-                                <p><a href="#">Fierent adipisci iracundia est ei, usu timeam persius ea</a></p>
-                                <span>20 June, 2013</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo base_url('public/'); ?>img/dummies/blog/small/3.jpg" alt="" class="thumbnail pull-left" />
-                                <p><a href="#">Usu ea justo malis, pri quando everti electram ei</a></p>
-                                <span>20 June, 2013</span>
-                            </li>
+                            <?php foreach ($popular as $row) : ?>
+                                <li>
+                                    <img src="<?php echo base_url('public/'); ?>img/dummies/blog/small/1.jpg" alt="" class="thumbnail pull-left" />
+                                    <p><a href="#"><?= $row['title']; ?></a></p>
+                                    <span><?= date('d F Y', $row['date_created']); ?></span>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                     <div class="tab-pane" id="two">
@@ -70,7 +62,7 @@
 
             <h5 class="widgetheading">Video widget</h5>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/video/watch?v=psu-fasbzpU" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/watch?v=eej2XLqoS3c&list=RDMMeej2XLqoS3c&start_radio=1" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -85,7 +77,7 @@
 
             <h5 class="widgetheading">Text widget</h5>
             <p>
-                Lorem ipsum dolor sit amet, quo everti torquatos rationibus an, graeci splendide mel cu. Sed ad vidisse eruditi maluisset, et duo mazim placerat adipiscing.
+                Desa Bahari merupakan salah satu desa dalam wilayah Kecamatan Sampolawa Kabupaten Buton Selatan. Luas wilayah Desa Bahari adalah 450 Ha.
             </p>
 
         </div>

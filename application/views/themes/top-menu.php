@@ -41,7 +41,7 @@
                         <nav>
                             <ul class="nav topnav">
                                 <li class="active">
-                                    <a href="<?= base_url(); ?>"><i class="icon-home"></i> Beranda </a>
+                                    <a href="<?= base_url(); ?>"><i class="icon-home"></i> Home </a>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#">Profil <i class="icon-angle-down"></i></a>
@@ -68,23 +68,19 @@
                                         <li><a href="#">LPMD</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="<?= base_url('artikel'); ?>">Kabar Desa</a></li>
+                                <li><a href="<?= base_url('penduduk'); ?>">Penduduk </a></li>
+
                                 <li class="dropdown">
-                                    <a href="#">Berita <i class="icon-angle-down"></i></a>
+                                    <a href="#">Galeri <i class="icon-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="<?= base_url('artikel'); ?>">Artikel</a></li>
-                                        <li><a href="<?= base_url('opini'); ?>">Opini</a></li>
-                                        <li><a href="<?= base_url('kabardesa'); ?>">Kabar Desa</a></li>
+                                        <li><a href="<?= base_url('galeri/foto'); ?>">Foto</a></li>
+                                        <li><a href="<?= base_url('galeri/video'); ?>">Video</a></li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="<?= base_url('penduduk'); ?>">Data Penduduk </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Galeri </a>
-                                </li>
-                                <li>
-                                    <a href="<?= base_url('kontak'); ?>">Kontak </a>
-                                </li>
+
+                                <li><a href="<?= base_url('download'); ?>">Download </a></li>
+                                <li><a href="<?= base_url('kontak'); ?>">Kontak </a></li>
                             </ul>
                         </nav>
                     </div>

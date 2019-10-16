@@ -7,7 +7,6 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>NIK</th>
                             <th>Nama</th>
                             <th>Gender</th>
                             <th>Usia</th>
@@ -20,17 +19,16 @@
                     <tbody>
                         <?php $no = 1;
                         foreach ($penduduk as $row) : ?>
-                        <tr>
-                            <td><?= $no++; ?></td>
-                            <td><?= $row['nik']; ?></td>
-                            <td><?= $row['nama']; ?></td>
-                            <td><?= $row['gender']; ?></td>
-                            <td><?= $row['usia']; ?></td>
-                            <td><?= $row['rt']; ?></td>
-                            <td><?= $row['dusun']; ?></td>
-                            <td><?= $row['pendidikan']; ?></td>
-                            <td><?= $row['pekerjaan']; ?></td>
-                        </tr>
+                            <tr>
+                                <td><?= $no++; ?></td>
+                                <td><?= $row['nama']; ?></td>
+                                <td><?= $row['gender']; ?></td>
+                                <td><?= $row['usia']; ?></td>
+                                <td><?= $row['rt']; ?></td>
+                                <td><?= $row['dusun']; ?></td>
+                                <td><?= $row['pendidikan']; ?></td>
+                                <td><?= $row['pekerjaan']; ?></td>
+                            </tr>
                         <?php endforeach; ?>
                     </tbody>
                 </table>

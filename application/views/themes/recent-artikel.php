@@ -6,74 +6,29 @@
                 <div class="row">
 
                     <div class="grid cs-style-4">
-                        <div class="span3">
-                            <div class="item">
-                                <figure>
-                                    <div><img src="<?php echo base_url('public/'); ?>img/dummies/works/1.jpg" alt="" /></div>
-                                    <figcaption>
+                        <?php foreach ($recent as $row) : ?>
+                            <div class="span3">
+                                <div class="item">
+                                    <figure>
                                         <div>
-                                            <span>
-                                                <a href="<?php echo base_url('public/'); ?>img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-                                            </span>
-                                            <span>
-                                                <a href="#" class="btn btn-medium btn-theme">Lihat Artikel</a>
-                                            </span>
+                                            <img src="<?= base_url('upload_file/images/' . $row['image']); ?>" alt="" />
                                         </div>
-                                    </figcaption>
-                                </figure>
+                                        <figcaption>
+                                            <div>
+                                                <span>
+                                                    <a href=" #"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
+                                                </span>
+                                                <span>
+                                                    <a href="<?php echo base_url(); ?>artikel/readmore/<?php echo $row['id']; ?>" class="btn btn-medium btn-theme">Lihat Artikel</a>
+                                                </span>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
                             </div>
-                        </div>
-                        <div class="span3">
-                            <div class="item">
-                                <figure>
-                                    <div><img src="<?php echo base_url('public/'); ?>img/dummies/works/2.jpg" alt="" /></div>
-                                    <figcaption>
-                                        <div>
-                                            <span>
-                                                <a href="<?php echo base_url('public/'); ?>img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-                                            </span>
-                                            <span>
-                                                <a href="#" class="btn btn-medium btn-theme">Lihat Artikel</a>
-                                            </span>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="span3">
-                            <div class="item">
-                                <figure>
-                                    <div><img src="<?php echo base_url('public/'); ?>img/dummies/works/3.jpg" alt="" /></div>
-                                    <figcaption>
-                                        <div>
-                                            <span>
-                                                <a href="<?php echo base_url('public/'); ?>img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-                                            </span>
-                                            <span>
-                                                <a href="#" class="btn btn-medium btn-theme">Lihat Artikel</a>
-                                            </span>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="span3">
-                            <div class="item">
-                                <figure>
-                                    <div><img src="<?php echo base_url('public/'); ?>img/dummies/works/4.jpg" alt="" /></div>
-                                    <figcaption>
-                                        <div>
-                                            <span>
-                                                <a href="<?php echo base_url('public/'); ?>img/dummies/works/big.png" data-pretty="prettyPhoto[gallery1]" title="Portfolio caption here"><i class="icon-plus icon-circled icon-bglight icon-2x"></i></a>
-                                            </span>
-                                            <span>
-                                                <a href="#" class="btn btn-medium btn-theme">Lihat Artikel</a>
-                                            </span>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
+
+                        <?php endforeach; ?>
+
                     </div>
 
                 </div>

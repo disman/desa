@@ -148,4 +148,17 @@ class Penduduk_m extends CI_Model
         // $query = $this->db->get($this->_table);
         // return $query->result_array();
     }
+
+    public function countAll()
+    {
+        return $this->db->get($this->_table)->num_rows();
+    }
+
+    public function getByGender()
+    {
+        $this->db->select('*');
+        $this->db->where('gender');
+        $this->db->from($this->_table);
+        return $this->db->get()->result();
+    }
 }

@@ -8,12 +8,14 @@ class Artikel extends CI_Controller
     {
         parent::__construct();
         $this->load->model('kategori_m', 'kategori', true);
-        $this->load->model('artikel_m', 'artikel', true);
+        $this->load->model('artikel_m');
+        $this->load->helper('text');
     }
     public function index()
     {
+        $artikel = $this->artikel_m;
         $data['kategori'] = $this->kategori->getAll();
-        $data['artikel'] = $this->artikel->getAll();
+        $data['artikel'] = $artikel->getAll();
         $data['title'] = "Artikel";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
@@ -25,8 +27,11 @@ class Artikel extends CI_Controller
 
     public function readmore()
     {
+        $artikel = $this->artikel_m;
+        $id = $this->uri->segment(3);
+        // $id = $this->db->get_where('artikel', ['id' => $id]);
         $data['kategori'] = $this->kategori->getAll();
-        $data['readmore'] = $this->artikel->readmore();
+        $data['artikel'] = $artikel->readMore($id);
         $data['title'] = "Artikel";
         $this->load->view('themes/header', $data);
         $this->load->view('themes/top-menu', $data);
