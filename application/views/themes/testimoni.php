@@ -26,24 +26,10 @@
             </li>
             <li>
                 <blockquote>
-                    Website ini dikembangkan menggunakan Framework Codeigniter dan
+                    Website ini dikembangkan menggunakan Framework Codeigniter dan Bootstrap css
                 </blockquote>
                 <div class="testimonial-autor">
                     <img src="<?php echo base_url('public/'); ?>img/dummies/testimonial/3.png" alt="" />
-                    <h4>Kang</h4>
-                    <a href="#">http://dismaninfo.wordpress.com</a>
-                </div>
-            </li>
-            <li>
-                <blockquote>
-                    Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
-                    feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed
-                    interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam
-                    adipiscing, justo quis
-                    feugiat
-                </blockquote>
-                <div class="testimonial-autor">
-                    <img src="<?php echo base_url('public/'); ?>img/dummies/testimonial/4.png" alt="" />
                     <h4>Kang</h4>
                     <a href="#">http://dismaninfo.wordpress.com</a>
                 </div>

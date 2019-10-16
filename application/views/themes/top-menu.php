@@ -70,7 +70,15 @@
                                 </li>
                                 <li><a href="<?= base_url('artikel'); ?>">Kabar Desa</a></li>
                                 <li><a href="<?= base_url('penduduk'); ?>">Penduduk </a></li>
-                                <li><a href="<?= base_url('galeri'); ?>">Galeri </a></li>
+
+                                <li class="dropdown">
+                                    <a href="#">Galeri <i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="<?= base_url('galeri/foto'); ?>">Foto</a></li>
+                                        <li><a href="<?= base_url('galeri/video'); ?>">Video</a></li>
+                                    </ul>
+                                </li>
+
                                 <li><a href="<?= base_url('download'); ?>">Download </a></li>
                                 <li><a href="<?= base_url('kontak'); ?>">Kontak </a></li>
                             </ul>

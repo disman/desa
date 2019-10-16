@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 25, 2019 at 07:06 AM
+-- Generation Time: Oct 16, 2019 at 03:18 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -50,9 +50,10 @@ INSERT INTO `admin` (`id`, `nama`, `email`, `password`) VALUES
 
 CREATE TABLE `artikel` (
   `id` int(11) NOT NULL,
-  `title` varchar(256) NOT NULL,
+  `title` varchar(100) NOT NULL,
   `content` text NOT NULL,
   `image` varchar(128) NOT NULL DEFAULT 'default.jpg',
+  `url` varchar(100) NOT NULL,
   `counter` int(3) NOT NULL,
   `date_created` int(11) NOT NULL,
   `category_id` int(11) NOT NULL
@@ -62,12 +63,10 @@ CREATE TABLE `artikel` (
 -- Dumping data for table `artikel`
 --
 
-INSERT INTO `artikel` (`id`, `title`, `content`, `image`, `counter`, `date_created`, `category_id`) VALUES
-(1, 'Coba saja', '<p>lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor </p>', 'default.jpg', 0, 1568396744, 23),
-(2, 'test kagn', '<p>lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor <br></p>', 'default.jpg', 0, 1568397787, 22),
-(3, 'Artikel terbaru', '<p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>', 'default.jpg', 0, 1568855656, 21),
-(4, 'Tambah artikel baru', '<p>coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba lagi coba </p>', 'default.jpg', 0, 1568875097, 23),
-(5, 'Artikel bergambar', '<p>test gambar</p>', 'img4.jpg', 0, 1568871180, 23);
+INSERT INTO `artikel` (`id`, `title`, `content`, `image`, `url`, `counter`, `date_created`, `category_id`) VALUES
+(5, 'Mendes Ingin Dana Desa di Nias Untuk Kembangkan Wisata', '<p><b xss=\"removed\">Jakarta</b><span xss=\"removed\"> - Menteri Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi Eko Putro Sandjojo mendorong desa-desa di Nias menggunakan dana desanya untuk pengembangan desa wisata. Pasalnya, lima tahun ke depan dana desa meningkat dari Rp 257 triliun menjadi Rp 400 triliun. Fokusnya akan lebih banyak untuk pengembangan SDM dan pemberdayaan ekonomi.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Tolong dana desanya digunakan untuk membangun desa-desa wisata. Lima tahun ini banyak desa wisata yang pendapatannya puluhan milyar bahkan bayar pajaknya lebih besar dari dana desa yg diterimanya. Saya yakin, tahun depan Nias sudah dapat di atas 1 milyar,\" ujarnya dalam keterangan resmi, Sabtu (14/9/2019).</span></p><p><span xss=\"removed\">Eko melanjutkan, dengan fokus mengembangkan sektor pariwisata, dana desa sebesar satu miliar yang didapat sudah cukup membantu BUMDes mengembangkan sektor pariwisata.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Dengan alam yang bagus di Nias ini, investasi 1 Milyar untuk desa wisata akan kembali dalam 1-2 tahun,\" pungkasnya.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Dalam rangka Sail Nias ini, Kementerian Desa, Pembangunan Daerah Tertinggal, dan Transmigrasi pun ikut serta dalam pameran Wonderful Expo.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Di pameran, kami bawa BUMDes-BUMDes sukses dari seluruh Indonesia, jadi desa-desa di Nias bisa belajar bagaimana mengelola BUMDes,\" jelasnya.</span></p><p><span xss=\"removed\">Ia juga berharap acara sail Nias ini menjadikan Nias dikenal, juga dengan hadirnya duta-duta besar mengikuti rangkaian acara mudahan mendapat dampak positif.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Dengan adanya sail ini berharap bisa mendongkrak perekonomian di Nias khususnya, Sumatera Utara umumnya,\" katanya.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Mendes bersama Menteri Hukum dan Hak Asasi Manusia (Menkumham) Yasona Laoli sebelumnya juga meninjau langsung persiapan event Sail Nias 2019 yang puncaknya dipusatkan di Pelabuhan Teluk Dalam, Nias Selatan, Sumatera Utara.</span></p><p><span xss=\"removed\">sumber : </span><a href=\"https://news.detik.com/berita/d-4706532/mendes-ingin-dana-desa-di-nias-untuk-kembangkan-wisata?_ga=2.201797393.1426468918.1569684391-757031943.1569684391\" target=\"_blank\">news.detik.com</a><br xss=\"removed\"></p>', 'iMac.png', 'Mendes-Ingin-Dana-Desa-di-Nias-Untuk-Kembangkan-Wisata_ID', 0, 1569687764, 23),
+(7, 'Korupsi Dana Desa Rp 287 Juta, Kades di Jombang Dijebloskan ke Penjara', '<p><b xss=\"removed\">Jombang</b><span xss=\"removed\"> - Kepala Desa Dukuhmojo, Mojoagung, Jombang, Prananjaya dijebloskan ke penjara. Dia diduga melakukan korupsi Dana Desa (DD) tahun 2018 dengan membuat proyek fiktif.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Prananjaya diperiksa penyidik Pidana Khusus Kejari Jombang sejak pukul 10.00 WIB. Dalam pemeriksaan perdana ini, dia langsung ditetapkan sebagai tersangka kasus korupsi DD di Desa Dukuhmojo.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Selama ini dia sudah dua kali mengabaikan panggilan penyidik. Prananjaya dijebloskan ke Lapas Kelas II-B Jombang sekitar pukul 16.00 WIB.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Hari ini PJ (Prananjaya) kami tetapkan sebagai tersangka dan kami tahan. Tersangka diduga melakukan penyaluran Dana Desa fiktif,\" kata Kepala Kejari Jombang Syafiruddin kepada wartawan di kantornya, Jalan KH Wahid Hasyim, Selasa (17/9/2019).</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Syafiruddin menjelaskan Prananjaya diduga melakukan korupsi DD untuk Desa Dukuhmojo tahun 2018. Modusnya, tersangka membuat proyek fiktif pembangunan tembok penahan tanah di desa tersebut. Selain itu, terdapat DD sekitar Rp 10 juta yang tidak disalurkan untuk masyarakat.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Nilai kerugian Dana Desa yang dikucurkan sekitar Rp 287 juta. Dana itu tidak digunakan sesuai peruntukannya,\" ungkapnya.</span></p><p><span xss=\"removed\">Untuk menutupi kesalahannya, lanjut Syafiruddin, tersangka membuat laporan pertanggungjawaban penggunaan DD fiktif. Dengan dana Rp 70 juta, tersangka juga membangun tanggul penahan tanah ala kadarnya. Tujuannya untuk mengelabui penyidik seolah-olah proyek Rp 278 juta sudah dikerjakan.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Sudah kami cek ke lapangan, bangunan yang ada dibangun Rp 70 juta untuk merekayasa. Kami cek bangunan dipegang saja hancur karena tidak sesuai speknya,\" terangnya.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">Akibat perbuatannya, Prananjaya dijerat dengan Pasal 2 dan 3 UU RI Nomor 20 Tahun 2001 tentang Pemberantasan Tindak Pidana Korupsi. Ancaman hukuman 20 tahun penjara sudah menantinya. Kini Kejari Jombang menyelidiki keterlibatan pihak lain dalam kasus ini.</span><br xss=\"removed\"><br xss=\"removed\"><span xss=\"removed\">\"Masih kami dalami untuk tersangka lain,\" tandas Syafiruddin.</span></p><p>sumber: <a href=\"https://news.detik.com/berita-jawa-timur/d-4710172/korupsi-dana-desa-rp-287-juta-kades-di-jombang-dijebloskan-ke-penjara?_ga=2.198126127.1426468918.1569684391-757031943.1569684391\" target=\"_blank\">news.detik.com</a><span xss=\"removed\"><br></span></p>', 'browsers.png', 'Korupsi-Dana-Desa-Rp-287-Juta-Kades-di-Jombang-Dijebloskan-ke-Penjara_ID', 0, 1569687777, 23),
+(8, 'Bukit Kelam, Wisata Alam Eksotis Sintang yang Simpan Banyak Misteri', '<span xss=\"removed\"><b>Jakarta</b></span><span xss=\"removed\"><b> -</b> </span>Bukit Kelam menjadi objek wisata ikonik di Sintang, Kalimantan Barat. Menariknya, bukit ini bukan dari tanah, melainkan dari batu besar. Dinamakan kelam pun karena batu tersebut berwarna hitam kelam.<p xss=\"removed\">Bukit yang berjarak sekitar 23 km dari pusat Kabupaten Sintang ini bisa ditempuh sekitar 30-40 menit hingga ke kaki bukit. Di sepanjang perjalanan, traveler akan disuguhkan dengan pemandangan alam di kiri dan kanan seperti kebun sawit, pisang, dan karet.</p><p xss=\"removed\">Akses jalan menuju kaki bukit ini terbilang sangat baik dengan dilapisi aspal. Namun, jalanan yang naik turun seperti lewati bukit membuat pengendara mesti hati-hati. Dari cerita yang beredar, konon bukit tersebut dilingkupi berbagai kisah misteri.</p><p xss=\"removed\">Menurut Ketua Adat di Desa Kebong, Kabupaten Sintang, Karen Ayo (76) Bukit Kelam adalah batu yang di angkat oleh pemuda Dayak bernama Bujang Beji.Tujuannya pendekar raksasa ini ingin menutup persimpangan antara Sungai Kapuas dan Melawi.</p><p xss=\"removed\">\"Jadi memang Bujang Beji ini raksasa, karena zaman dulu juga kan ukuran badannya lebih besar dari kita-kira sekarang ini, Jadi niatnya itu ambil batu besar ini buat nutup simpang Sungai Kapuas dan Melawi. Pas dia mau bawa ke sana cuma di perjalanan putus lah talinya, dari ikatan ilalang tadi tuh. Terus jatuh lah di sini, akhirnya jadi bukit kelam,\" ujarnya kepada detikcom, Rabu (28/8/2019).</p><p xss=\"removed\">\"Saat jatuh, Bujang Beji ini mau mengangkat lagi, tapi nggak bisa. Dicongkel bagaimana pun juga nggak bisa. Begitulah cerita orang tua soal bukit kelam ini, \" tambahnya.</p><p xss=\"removed\">Ada juga yang mengatakan bahwa Bukit Kelam adalah meteor yang jatuh ke bumi pada masa lalu. Hal itu juga dimungkinkan karena adanya batu dengan bentuk yang lebih kecil di area sekeliling kaki bukit kelam.</p><p xss=\"removed\">Terlepas dari segala mitos dan kisah misteri, tidak sedikit traveler yang naik ke puncak Bukit Kelam. Dalam perjalanan menuju puncak, traveler akan disuguhi pemandangan indah khas hutan Kalimantan.</p><p xss=\"removed\">Untuk mendaki sampai puncak bagi yang belum terbiasa memerlukan waktu 3-4 jam. Dengan kemiringan sampai 15-40 derajat maka dibuatkan tangga besi untuk mempermudah pendakian.</p><p xss=\"removed\">\"Kalau jalannya dari bawah ke puncaknya, ada jalan setapak semacam tangga. Kekuatan tangganya itu boleh juga lah. Sampai sekarang masih utuh tangganya. Kalau di atas sana itu memang alam rimba lah, sampai sekarang ini masih dilestarikan alamnya,\" ujar Panji, salah seorang warga Desa Kebong, Kecamatan Kelam Permai.</p><p xss=\"removed\">\"Kami sebagai warga bukit kelam ini merasa bangga lah, punya bukit kelam yang berbatu. Katanya terbesar sedunia. Makanya banyak juga turis-turis sedunia yang berkunjung ke sini,\" tambahnya.</p><p xss=\"removed\">Selain itu, di area kaki bukit yang masih dalam kawasan Desa Kebong, terdapat spot foto Instagramable. Bukit Kelam memang salah satu dari bagian cagar budaya milik Kabupaten Sintang. Selain hutan rimba, menurut warga sekitar, terdapat pula sumber mata air yang konon tak pernah habis meski kemarau.</p><p xss=\"removed\">Salah satu pemanfaatannya, air bersih tersebut diambil untuk dijadikan usaha air minum dalam kemasan. Dibantu dengan dana desa, air mineral kemasan ini baru tahun ini berjalan, dibentuk BUMDes untuk dikelola warga sekitar sebagai upaya untuk meningkatkan perekonomian lewat sumber daya alam yang ada.</p><p xss=\"removed\">sumber: <a href=\"https://travel.detik.com/travel-news/d-4704866/bukit-kelam-wisata-alam-eksotis-sintang-yang-simpan-banyak-misteri?_ga=2.168830497.1426468918.1569684391-757031943.1569684391\" target=\"_blank\">travel.detik.com</a></p>', 'screen.png', 'Bukit-Kelam-Wisata-Alam-Eksotis-Sintang-yang-Simpan-Banyak-Misteri_ID', 0, 1569687737, 23);
 
 -- --------------------------------------------------------
 
@@ -101,6 +100,34 @@ CREATE TABLE `download` (
   `berkas` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `download`
+--
+
+INSERT INTO `download` (`id`, `title`, `berkas`) VALUES
+(21, 'PermenDesaPDTT Nomor 11 Tahun 2019 ttg Prioritas Penggunaan Dana Desa Tahun 2020', 'PermenDesaPDTT_Nomor_11_Tahun_2019_ttg_Prioritas_Penggunaan_Dana_Desa_Tahun_2020_(Salinan).pdf');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `galery`
+--
+
+CREATE TABLE `galery` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `keterangan` varchar(255) NOT NULL,
+  `galery` text NOT NULL,
+  `date_created` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `galery`
+--
+
+INSERT INTO `galery` (`id`, `title`, `keterangan`, `galery`, `date_created`) VALUES
+(2, 'hfv', 'dfbvnx', 'default.jpg', 1570552243);
+
 -- --------------------------------------------------------
 
 --
@@ -115,13 +142,6 @@ CREATE TABLE `kabardesa` (
   `counter` int(3) NOT NULL,
   `date_created` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `kabardesa`
---
-
-INSERT INTO `kabardesa` (`id`, `title`, `content`, `image`, `counter`, `date_created`) VALUES
-(3, 'test youtube', '&lt;p&gt;&amp;lt;iframe frameborder=&quot;0&quot; src=&quot;//www.youtube.com/embed/v99A0FgcT2U&quot; width=&quot;640&quot; height=&quot;360&quot; class=&quot;note-video-clip&quot;&amp;gt;Youtube&amp;lt;/iframe&amp;gt;&lt;br&gt;&lt;/p&gt;', 'default.jpg', 0, 1565194406);
 
 -- --------------------------------------------------------
 
@@ -149,6 +169,7 @@ INSERT INTO `menu` (`id`, `title`, `url`, `icon`, `is_active`) VALUES
 (9, 'Opini', 'admin/opini', 'glyphicon glyphicon-fire', 1),
 (10, 'Penduduk', 'admin/penduduk', 'glyphicon glyphicon-user', 1),
 (11, 'Download', 'admin/download', 'glyphicon glyphicon-save', 1),
+(12, 'Galery', 'admin/galery', 'glyphicon glyphicon-hd-video', 1),
 (50, 'Management menu', 'admin/menu', 'glyphicon glyphicon-wrench', 1);
 
 -- --------------------------------------------------------
@@ -165,17 +186,6 @@ CREATE TABLE `opini` (
   `date_created` int(11) NOT NULL,
   `counter` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `opini`
---
-
-INSERT INTO `opini` (`id`, `title`, `image`, `content`, `date_created`, `counter`) VALUES
-(3, 'Tentang Git', 'images.png', '<p>ini adalah tentang git dan juga ini adalah tentang saya</p>', 1566784572, 0),
-(4, 'What is Lorem Ipsum?', 'default.jpg', '<p><strong xss=\"removed\">Lorem Ipsum</strong><span xss=\"removed\"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span></p>', 1566784543, 0),
-(5, 'Where does it come from?', 'default.jpg', '<p><span xss=\"removed\" xss=removed>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</span></p><p xss=\"removed\"><span xss=removed>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</span></p>', 1566784530, 0),
-(6, 'Why do we use it?', 'default.jpg', '<p xss=removed><span xss=removed>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span></p>', 1566784647, 0),
-(7, 'Where can I get some?', 'default.jpg', '<p xss=removed><span xss=removed>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</span></p>', 1566784675, 0);
 
 -- --------------------------------------------------------
 
@@ -269,6 +279,12 @@ ALTER TABLE `download`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `galery`
+--
+ALTER TABLE `galery`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `kabardesa`
 --
 ALTER TABLE `kabardesa`
@@ -312,7 +328,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -324,7 +340,13 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `download`
 --
 ALTER TABLE `download`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `galery`
+--
+ALTER TABLE `galery`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `kabardesa`
@@ -336,7 +358,7 @@ ALTER TABLE `kabardesa`
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `opini`

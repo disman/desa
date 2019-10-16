@@ -9,6 +9,7 @@ class Download extends CI_Controller
         parent::__construct();
         $this->load->model('download_m');
         $this->load->model('kategori_m');
+        $this->load->model('artikel_m');
     }
 
     public function index()
@@ -17,6 +18,8 @@ class Download extends CI_Controller
         $data['download'] = $download->getAll();
         $kategori = $this->kategori_m;
         $data['kategori'] = $kategori->getAll();
+        $artikel = $this->artikel_m;
+        $data['popular'] = $artikel->kabarTerkini();
         $data['title'] = "Download";
 
         $this->load->view('themes/header', $data);
