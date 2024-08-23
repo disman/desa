@@ -74,22 +74,6 @@ class Auth extends CI_Controller
         redirect('auth');
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public function edit($id = null)
     {
         $rules = $this->menu->rules();
